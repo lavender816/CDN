@@ -25,6 +25,10 @@ mashiro_global.ini = new function () {
         social_share();
         post_list_show_animation();
         copy_code_block();
+        //BotUI重载
+        if ($("div").hasClass("popcontainer")) {
+            loadBotui()
+        }
         web_audio();
         coverVideoIni();
         checkskinSecter();
@@ -44,7 +48,7 @@ function loadBotui() {
         if (mashiro_global.variables.has_bot_ui) {
             bot_ui_ini()
         } else {
-            $.getScript('https://cdn.jsdelivr.net/gh/lavender816/CDN@1.3/botui/botui.js',
+            $.getScript('https://cdn.jsdelivr.net/gh/lavender816/CDN@latest/botui/botui.js',
                 //上方JS中的'BotUI回复配置'修改为你自己的BotUI回复配置，其他不变
                 function() {
                     bot_ui_ini();
