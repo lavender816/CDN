@@ -5,6 +5,7 @@
  * @date 2019.8.3
  */
 mashiro_global.variables = new function () {
+    this.has_bot_ui = false;
     this.has_hls = false;
     this.skinSecter = true;
 }
@@ -751,6 +752,12 @@ var pjaxInit = function () {
         try {
             reloadHermit();
         } catch (e) {};
+    }
+    if ($("div").hasClass("aplayer")) {
+        reloadHermit();
+    }
+    if ($("div").hasClass("popcontainer")) {
+        loadBotui();
     }
     $('.iconflat').css('width', '50px').css('height', '50px');
     $('.openNav').css('height', '50px');
