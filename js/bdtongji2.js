@@ -1,7 +1,7 @@
 var start_date = '20211020' // 开始日期
 var date = new Date();
 var end_date = '' + date.getFullYear() + (date.getMonth() > 8 ? (date.getMonth() + 1) : ("0" + (date.getMonth() + 1))) + (date.getDate() > 9 ? date.getDate() : ("0" + date.getDate())); // 结束日期
-var access_token = '121.c1131ade9b3bce903d982f8a71b91ac7.Ys0ikCvHxAZQy6Dd1FJ7svOu0K3IqDse79WURuT.C0_YBQ' // accessToken
+var access_token = '121.080fb75903f9956adc2d88ba02ace07a.YHEN6xe7O-_a1f2NxRwg8D8JESYnd71-pkrsitA.m1apXg' // accessToken
 var site_id = '17321284' // 网址 id
 var dataUrl = 'https://bdtongji-lavender.vercel.app/api?access_token=' + access_token + '&site_id=' + site_id
 var metrics = 'pv_count' // 统计访问次数 PV 填写 'pv_count'，统计访客数 UV 填写 'visitor_count'，二选一
